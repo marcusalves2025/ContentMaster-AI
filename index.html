@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContentMaster AI</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+  <h1>ContentMaster AI</h1>
+  <select id="content-type">
+    <option value="texto">Texto</option>
+    <option value="artigo">Artigo</option>
+    <option value="post">Post</option>
+  </select>
+  <textarea id="prompt" placeholder="Digite seu prompt aqui..."></textarea>
+  <button id="generate-btn"><i class="fas fa-magic"></i> Gerar Conteúdo</button>
+  <div id="output-content"></div>
+  <div class="history">
+    <h2>Histórico</h2>
+    <div id="history-list"></div>
+    <button class="btn btn-small" onclick="limparHistorico()">🗑️ Limpar Histórico</button>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
